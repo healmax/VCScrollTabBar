@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F17AD6721F5783100058D8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F17AD6621F5783100058D8F /* AppDelegate.m */; };
+		3F17AD6A21F5783100058D8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F17AD6921F5783100058D8F /* ViewController.m */; };
+		3F17AD6D21F5783100058D8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F17AD6B21F5783100058D8F /* Main.storyboard */; };
+		3F17AD6F21F5783400058D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F17AD6E21F5783400058D8F /* Assets.xcassets */; };
+		3F17AD7221F5783400058D8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F17AD7021F5783400058D8F /* LaunchScreen.storyboard */; };
+		3F17AD7521F5783400058D8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F17AD7421F5783400058D8F /* main.m */; };
+		3F17AD7D21F578EC00058D8F /* VCScrollTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F17AD7C21F578EC00058D8F /* VCScrollTabBar.m */; };
+		3F3D7BD121F6BFCB0024A556 /* UILabel+TextColorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D7BD021F6BFCB0024A556 /* UILabel+TextColorAnimation.m */; };
+		3F3D7BD921F81B460024A556 /* UIView+LayoutConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D7BD821F81B460024A556 /* UIView+LayoutConstraints.m */; };
+		3F3D7BDC21F81DEC0024A556 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D7BDB21F81DEC0024A556 /* UIColor+Helper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F17AD6221F5783100058D8F /* VCScrollTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCScrollTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F17AD6521F5783100058D8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F17AD6621F5783100058D8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F17AD6821F5783100058D8F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F17AD6921F5783100058D8F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F17AD6C21F5783100058D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F17AD6E21F5783400058D8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F17AD7121F5783400058D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F17AD7321F5783400058D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F17AD7421F5783400058D8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F17AD7B21F578EC00058D8F /* VCScrollTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VCScrollTabBar.h; path = ../VCScrollTabBar.h; sourceTree = "<group>"; };
+		3F17AD7C21F578EC00058D8F /* VCScrollTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VCScrollTabBar.m; path = ../VCScrollTabBar.m; sourceTree = "<group>"; };
+		3F3D7BCF21F6BFCB0024A556 /* UILabel+TextColorAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+TextColorAnimation.h"; sourceTree = "<group>"; };
+		3F3D7BD021F6BFCB0024A556 /* UILabel+TextColorAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TextColorAnimation.m"; sourceTree = "<group>"; };
+		3F3D7BD721F81B460024A556 /* UIView+LayoutConstraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutConstraints.h"; sourceTree = "<group>"; };
+		3F3D7BD821F81B460024A556 /* UIView+LayoutConstraints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutConstraints.m"; sourceTree = "<group>"; };
+		3F3D7BDA21F81DEC0024A556 /* UIColor+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
+		3F3D7BDB21F81DEC0024A556 /* UIColor+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Helper.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F17AD5F21F5783100058D8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F17AD5921F5783000058D8F = {
+			isa = PBXGroup;
+			children = (
+				3F17AD6421F5783100058D8F /* VCScrollTabBar */,
+				3F17AD6321F5783100058D8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F17AD6321F5783100058D8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F17AD6221F5783100058D8F /* VCScrollTabBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F17AD6421F5783100058D8F /* VCScrollTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3F3D7BD621F81B260024A556 /* Category */,
+				3F3D7BD521F81B100024A556 /* ScrollViewTabBar */,
+				3F17AD6521F5783100058D8F /* AppDelegate.h */,
+				3F17AD6621F5783100058D8F /* AppDelegate.m */,
+				3F17AD6821F5783100058D8F /* ViewController.h */,
+				3F17AD6921F5783100058D8F /* ViewController.m */,
+				3F17AD6B21F5783100058D8F /* Main.storyboard */,
+				3F17AD6E21F5783400058D8F /* Assets.xcassets */,
+				3F17AD7021F5783400058D8F /* LaunchScreen.storyboard */,
+				3F17AD7321F5783400058D8F /* Info.plist */,
+				3F17AD7421F5783400058D8F /* main.m */,
+				3F3D7BCF21F6BFCB0024A556 /* UILabel+TextColorAnimation.h */,
+				3F3D7BD021F6BFCB0024A556 /* UILabel+TextColorAnimation.m */,
+			);
+			path = VCScrollTabBar;
+			sourceTree = "<group>";
+		};
+		3F3D7BD521F81B100024A556 /* ScrollViewTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3F17AD7B21F578EC00058D8F /* VCScrollTabBar.h */,
+				3F17AD7C21F578EC00058D8F /* VCScrollTabBar.m */,
+			);
+			path = ScrollViewTabBar;
+			sourceTree = "<group>";
+		};
+		3F3D7BD621F81B260024A556 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3F3D7BD721F81B460024A556 /* UIView+LayoutConstraints.h */,
+				3F3D7BD821F81B460024A556 /* UIView+LayoutConstraints.m */,
+				3F3D7BDA21F81DEC0024A556 /* UIColor+Helper.h */,
+				3F3D7BDB21F81DEC0024A556 /* UIColor+Helper.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F17AD6121F5783100058D8F /* VCScrollTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F17AD7821F5783400058D8F /* Build configuration list for PBXNativeTarget "VCScrollTabBar" */;
+			buildPhases = (
+				3F17AD5E21F5783100058D8F /* Sources */,
+				3F17AD5F21F5783100058D8F /* Frameworks */,
+				3F17AD6021F5783100058D8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VCScrollTabBar;
+			productName = VCScrollTabBar;
+			productReference = 3F17AD6221F5783100058D8F /* VCScrollTabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F17AD5A21F5783000058D8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.healmax;
+				TargetAttributes = {
+					3F17AD6121F5783100058D8F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 3F17AD5D21F5783000058D8F /* Build configuration list for PBXProject "VCScrollTabBar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F17AD5921F5783000058D8F;
+			productRefGroup = 3F17AD6321F5783100058D8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F17AD6121F5783100058D8F /* VCScrollTabBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F17AD6021F5783100058D8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F17AD7221F5783400058D8F /* LaunchScreen.storyboard in Resources */,
+				3F17AD6F21F5783400058D8F /* Assets.xcassets in Resources */,
+				3F17AD6D21F5783100058D8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F17AD5E21F5783100058D8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F17AD6A21F5783100058D8F /* ViewController.m in Sources */,
+				3F17AD7521F5783400058D8F /* main.m in Sources */,
+				3F3D7BD121F6BFCB0024A556 /* UILabel+TextColorAnimation.m in Sources */,
+				3F17AD6721F5783100058D8F /* AppDelegate.m in Sources */,
+				3F3D7BDC21F81DEC0024A556 /* UIColor+Helper.m in Sources */,
+				3F17AD7D21F578EC00058D8F /* VCScrollTabBar.m in Sources */,
+				3F3D7BD921F81B460024A556 /* UIView+LayoutConstraints.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F17AD6B21F5783100058D8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F17AD6C21F5783100058D8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F17AD7021F5783400058D8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F17AD7121F5783400058D8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F17AD7621F5783400058D8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F17AD7721F5783400058D8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F17AD7921F5783400058D8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9JJV5E86Z;
+				INFOPLIST_FILE = VCScrollTabBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.healmax.VCScrollTabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F17AD7A21F5783400058D8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9JJV5E86Z;
+				INFOPLIST_FILE = VCScrollTabBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.healmax.VCScrollTabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F17AD5D21F5783000058D8F /* Build configuration list for PBXProject "VCScrollTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F17AD7621F5783400058D8F /* Debug */,
+				3F17AD7721F5783400058D8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F17AD7821F5783400058D8F /* Build configuration list for PBXNativeTarget "VCScrollTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F17AD7921F5783400058D8F /* Debug */,
+				3F17AD7A21F5783400058D8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F17AD5A21F5783000058D8F /* Project object */;
+}
