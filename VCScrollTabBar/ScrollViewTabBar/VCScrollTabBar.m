@@ -72,15 +72,13 @@ static NSInteger const kButtonHorizontalInset = 10.f;
     return self;
 }
 
-- (instancetype)initWithTitleInfos:(NSArray<NSString *> *)titleInfos config:(VCScrollTabBarConfig *)config {
-    if (self = [super init]) {
-        _titleInfos = titleInfos;
-        _config = config;
-        [self commonInit];
-        [self updateTitleInfos:titleInfos];
-    }
-    
-    return self;
+- (void)configureTitleInfos:(NSArray<NSString *> *)titleInfos config:(VCScrollTabBarConfig *)config scrollView:(UIScrollView *) scrollView tarBarDelegate:(id<VCScrollTabBarDelegate>)tarBarDelegate {
+    self.titleInfos = titleInfos;
+    self.config = config;
+    self.externalScrollView = scrollView;
+    self.tarBarDelegate = tarBarDelegate;
+    [self commonInit];
+    [self updateTitleInfos:titleInfos];
 }
 
 #pragma mark - public
@@ -369,9 +367,10 @@ static NSInteger const kButtonHorizontalInset = 10.f;
     
     self.bottomIndicatorViewLeadingCT.constant = [self bottomIndicatorViewStartPositionXWithIndex:index];
     
+    previousButton.titleLabel.font = self.config.buttonTitleDefaultFont;
+    currentButton.titleLabel.font = self.config.buttonTitleMaxFont;
+    
     [UIView animateWithDuration:0.2 animations:^{
-        previousButton.titleLabel.font = self.config.buttonTitleDefaultFont;
-        currentButton.titleLabel.font = self.config.buttonTitleMaxFont;
         [self layoutIfNeeded];
     }];
     
@@ -429,8 +428,21 @@ static NSInteger const kButtonHorizontalInset = 10.f;
     self.bottomIndicatorViewLeadingCT.constant = [self bottomIndicatorViewStartPositionXWithIndex:leftPageIndex] + offsetToHeadIndicator;
     
     CGFloat size = (self.config.buttonTitleMaxFont.pointSize - self.config.buttonTitleDefaultFont.pointSize) * percentage;
-    self.tabBarButtons[leftPageIndex].titleLabel.font = [UIFont systemFontOfSize:self.config.buttonTitleMaxFont.pointSize - size];
-    self.tabBarButtons[leftPageIndex+1].titleLabel.font = [UIFont systemFontOfSize:self.config.buttonTitleDefaultFont.pointSize + size];
+    
+    UIFont *leftFont = [self.config.buttonTitleDefaultFont fontWithSize:self.config.buttonTitleMaxFont.pointSize - size];;
+    UIFont *rightFont = [self.config.buttonTitleDefaultFont fontWithSize:self.config.buttonTitleDefaultFont.pointSize + size];
+    
+    self.tabBarButtons[leftPageIndex].titleLabel.font = leftFont;
+    self.tabBarButtons[leftPageIndex+1].titleLabel.font = rightFont;
+    
+    [self deselectButtons];
+    if (percentage >= 0.5) {
+        self.tabBarButtons[leftPageIndex+1].selected = YES;
+        self.currentIndex = leftPageIndex+1;
+    } else {
+        self.tabBarButtons[leftPageIndex].selected = YES;
+        self.currentIndex = leftPageIndex;
+    }
     
     [self layoutIfNeeded];
 }

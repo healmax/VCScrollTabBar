@@ -17,6 +17,7 @@
 		3F3D7BD121F6BFCB0024A556 /* UILabel+TextColorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D7BD021F6BFCB0024A556 /* UILabel+TextColorAnimation.m */; };
 		3F3D7BD921F81B460024A556 /* UIView+LayoutConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D7BD821F81B460024A556 /* UIView+LayoutConstraints.m */; };
 		3F3D7BDC21F81DEC0024A556 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D7BDB21F81DEC0024A556 /* UIColor+Helper.m */; };
+		3F3D7BDF21F8742E0024A556 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D7BDE21F8742D0024A556 /* ViewController1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,14 +31,16 @@
 		3F17AD7121F5783400058D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F17AD7321F5783400058D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F17AD7421F5783400058D8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3F17AD7B21F578EC00058D8F /* VCScrollTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VCScrollTabBar.h; path = ../VCScrollTabBar.h; sourceTree = "<group>"; };
-		3F17AD7C21F578EC00058D8F /* VCScrollTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VCScrollTabBar.m; path = ../VCScrollTabBar.m; sourceTree = "<group>"; };
+		3F17AD7B21F578EC00058D8F /* VCScrollTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCScrollTabBar.h; sourceTree = "<group>"; };
+		3F17AD7C21F578EC00058D8F /* VCScrollTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCScrollTabBar.m; sourceTree = "<group>"; };
 		3F3D7BCF21F6BFCB0024A556 /* UILabel+TextColorAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+TextColorAnimation.h"; sourceTree = "<group>"; };
 		3F3D7BD021F6BFCB0024A556 /* UILabel+TextColorAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TextColorAnimation.m"; sourceTree = "<group>"; };
 		3F3D7BD721F81B460024A556 /* UIView+LayoutConstraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutConstraints.h"; sourceTree = "<group>"; };
 		3F3D7BD821F81B460024A556 /* UIView+LayoutConstraints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutConstraints.m"; sourceTree = "<group>"; };
 		3F3D7BDA21F81DEC0024A556 /* UIColor+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
 		3F3D7BDB21F81DEC0024A556 /* UIColor+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Helper.m"; sourceTree = "<group>"; };
+		3F3D7BDD21F8742D0024A556 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		3F3D7BDE21F8742D0024A556 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +73,6 @@
 		3F17AD6421F5783100058D8F /* VCScrollTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				3F3D7BD621F81B260024A556 /* Category */,
 				3F3D7BD521F81B100024A556 /* ScrollViewTabBar */,
 				3F17AD6521F5783100058D8F /* AppDelegate.h */,
 				3F17AD6621F5783100058D8F /* AppDelegate.m */,
@@ -83,6 +85,8 @@
 				3F17AD7421F5783400058D8F /* main.m */,
 				3F3D7BCF21F6BFCB0024A556 /* UILabel+TextColorAnimation.h */,
 				3F3D7BD021F6BFCB0024A556 /* UILabel+TextColorAnimation.m */,
+				3F3D7BDD21F8742D0024A556 /* ViewController1.h */,
+				3F3D7BDE21F8742D0024A556 /* ViewController1.m */,
 			);
 			path = VCScrollTabBar;
 			sourceTree = "<group>";
@@ -90,6 +94,7 @@
 		3F3D7BD521F81B100024A556 /* ScrollViewTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				3F3D7BD621F81B260024A556 /* Category */,
 				3F17AD7B21F578EC00058D8F /* VCScrollTabBar.h */,
 				3F17AD7C21F578EC00058D8F /* VCScrollTabBar.m */,
 			);
@@ -181,6 +186,7 @@
 				3F17AD7521F5783400058D8F /* main.m in Sources */,
 				3F3D7BD121F6BFCB0024A556 /* UILabel+TextColorAnimation.m in Sources */,
 				3F17AD6721F5783100058D8F /* AppDelegate.m in Sources */,
+				3F3D7BDF21F8742E0024A556 /* ViewController1.m in Sources */,
 				3F3D7BDC21F81DEC0024A556 /* UIColor+Helper.m in Sources */,
 				3F17AD7D21F578EC00058D8F /* VCScrollTabBar.m in Sources */,
 				3F3D7BD921F81B460024A556 /* UIView+LayoutConstraints.m in Sources */,

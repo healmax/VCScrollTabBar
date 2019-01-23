@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<VCScrollTabBarDelegate> tarBarDelegate;
 @property (nonatomic, strong, readonly) VCScrollTabBarConfig *config;
 
-- (instancetype)initWithTitleInfos:(NSArray<NSString *> *)titleInfos config:(VCScrollTabBarConfig *)config;
+- (void)configureTitleInfos:(NSArray<NSString *> *)titleInfos config:(VCScrollTabBarConfig *)config scrollView:(UIScrollView *) scrollView tarBarDelegate:(id<VCScrollTabBarDelegate>)tarBarDelegate;
 
 /**
  更新titleInfos
