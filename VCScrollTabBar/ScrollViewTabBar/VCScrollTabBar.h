@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL showBottomIndicatorView;
 
 
-@property (nonatomic, strong) UIFont *buttonTitleMaxFont;
+@property (nonatomic, strong) UIFont *buttonTitleSelectedFont;
 @property (nonatomic, strong) UIFont *buttonTitleDefaultFont;
 
 //TabBar Button 被選取時的顏色

@@ -25,7 +25,7 @@
     config.showBottomIndicatorView = YES;
     config.bottomIndicatorViewLength = 10.f;
     
-    config.buttonTitleMaxFont = [UIFont boldSystemFontOfSize:20.0];
+    config.buttonTitleSelectedFont = [UIFont boldSystemFontOfSize:20.0];
     config.buttonTitleDefaultFont = [UIFont boldSystemFontOfSize:15.0];
     config.buttonTitleSelectedColor = [UIColor blackColor];
     config.buttonTitleDefaultColor = [UIColor grayColor];
@@ -308,7 +308,7 @@ static NSInteger const kButtonHorizontalInset = 10.f;
  */
 - (CGSize)titleSizeWithButton:(UIButton *)button {
     CGSize constrainSize = CGSizeMake(300, 100);
-    UIFont *font = self.config.buttonTitleMaxFont;
+    UIFont *font = self.config.buttonTitleSelectedFont;
     NSString *text = button.titleLabel.text;
     
     CGRect titleRect = [text boundingRectWithSize:(constrainSize)
@@ -368,7 +368,7 @@ static NSInteger const kButtonHorizontalInset = 10.f;
     self.bottomIndicatorViewLeadingCT.constant = [self bottomIndicatorViewStartPositionXWithIndex:index];
     
     previousButton.titleLabel.font = self.config.buttonTitleDefaultFont;
-    currentButton.titleLabel.font = self.config.buttonTitleMaxFont;
+    currentButton.titleLabel.font = self.config.buttonTitleSelectedFont;
     
     [UIView animateWithDuration:0.2 animations:^{
         [self layoutIfNeeded];
@@ -402,24 +402,24 @@ static NSInteger const kButtonHorizontalInset = 10.f;
     
     //現在contentOffsetX與左邊那頁contentOffsetX起始值的差值
     //EX 從第一面滑到第二面的過程中假如contentOffsetX為50 offsetFromLeftPageStartContentOffset = 50 - 0(第一頁面contentOffsetX的起始直)
-    NSInteger offsetFromLeftPageStartContentOffset = scrollView.contentOffset.x - leftPageStartContentOffsetX;
+    NSInteger distanceFromLeftPageStartContentOffset = scrollView.contentOffset.x - leftPageStartContentOffsetX;
     
     //從左邊那頁面到右邊那頁面移動的percentage
-    CGFloat percentage =  offsetFromLeftPageStartContentOffset/pageWidth;
+    CGFloat percentage =  distanceFromLeftPageStartContentOffset/pageWidth;
     
     //左方的button的title Size
-    CGSize leftTitleSize = [self titleSizeWithButton:self.tabBarButtons[leftPageIndex]];
+    CGSize leftButtonTitleSize = [self titleSizeWithButton:self.tabBarButtons[leftPageIndex]];
     //右方的button的title Size
-    CGSize rightTitleSize = [self titleSizeWithButton:self.tabBarButtons[leftPageIndex+1]];
+    CGSize rightButtonTitleSize = [self titleSizeWithButton:self.tabBarButtons[leftPageIndex+1]];
     
-    //計算對應的enterIndicatorView的Width
-    CGFloat titleDiffWidth = -(leftTitleSize.width - rightTitleSize.width) * percentage;
-    self.centerIndicatorViewWidthCT.constant = leftTitleSize.width + titleDiffWidth;
+    //計算對應的centerIndicatorView的Width
+    CGFloat titleDiffWidth = (leftButtonTitleSize.width - rightButtonTitleSize.width) * percentage;
+    self.centerIndicatorViewWidthCT.constant = leftButtonTitleSize.width - titleDiffWidth;
     
     //左邊Title起始位置到右邊Title的起始位置距離
-    CGFloat titleHeahToHeadDistance = [self centerIndicatorViewStartPositionXWithIndex:leftPageIndex+1] - [self centerIndicatorViewStartPositionXWithIndex:leftPageIndex];
+    CGFloat buttonTitleHeahToHeadDistance = [self centerIndicatorViewStartPositionXWithIndex:leftPageIndex+1] - [self centerIndicatorViewStartPositionXWithIndex:leftPageIndex];
     
-    CGFloat offsetToHeadTitle = titleHeahToHeadDistance * percentage;
+    CGFloat offsetToHeadTitle = buttonTitleHeahToHeadDistance * percentage;
     self.centerIndicatorViewLeadingCT.constant = [self centerIndicatorViewStartPositionXWithIndex:leftPageIndex] + offsetToHeadTitle;
     
     //左邊Indicator起始位置到next Indicator起始位置的距離
@@ -427,10 +427,10 @@ static NSInteger const kButtonHorizontalInset = 10.f;
     CGFloat offsetToHeadIndicator = bottomIndicatorHeahToHeadDistance * percentage;
     self.bottomIndicatorViewLeadingCT.constant = [self bottomIndicatorViewStartPositionXWithIndex:leftPageIndex] + offsetToHeadIndicator;
     
-    CGFloat size = (self.config.buttonTitleMaxFont.pointSize - self.config.buttonTitleDefaultFont.pointSize) * percentage;
+    CGFloat fontSize = (self.config.buttonTitleSelectedFont.pointSize - self.config.buttonTitleDefaultFont.pointSize) * percentage;
     
-    UIFont *leftFont = [self.config.buttonTitleDefaultFont fontWithSize:self.config.buttonTitleMaxFont.pointSize - size];;
-    UIFont *rightFont = [self.config.buttonTitleDefaultFont fontWithSize:self.config.buttonTitleDefaultFont.pointSize + size];
+    UIFont *leftFont = [self.config.buttonTitleDefaultFont fontWithSize:self.config.buttonTitleSelectedFont.pointSize - fontSize];
+    UIFont *rightFont = [self.config.buttonTitleDefaultFont fontWithSize:self.config.buttonTitleDefaultFont.pointSize + fontSize];
     
     self.tabBarButtons[leftPageIndex].titleLabel.font = leftFont;
     self.tabBarButtons[leftPageIndex+1].titleLabel.font = rightFont;
