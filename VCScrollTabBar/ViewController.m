@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "VCScrollTabBar.h"
-#import "UILabel+TextColorAnimation.h"
 #import "UIView+LayoutConstraints.h"
 #import "UIColor+Helper.h"
 
