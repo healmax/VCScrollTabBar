@@ -1,0 +1,16 @@
+PODS:
+  - VCScrollTabBar (1.0.0)
+
+DEPENDENCIES:
+  - VCScrollTabBar
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - VCScrollTabBar
+
+SPEC CHECKSUMS:
+  VCScrollTabBar: 4f3dcaca792c5f0c3d603f055eb33ddb0baab83a
+
+PODFILE CHECKSUM: 32e4dced3abf4bf4d95b5c861f6554791afa5904
+
+COCOAPODS: 1.5.3
