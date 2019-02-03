@@ -16,8 +16,28 @@
 <img src="Bottom Indicator.gif" width="300">
 
 
+## Installation with CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like VCScrollTabBar in your projects.
+
+```bash
+$ gem install cocoapods
+```
+
+#### Podfile
+
+To integrate VCScrollTabBar into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+platform :ios, '9.0'
+
+target 'TargetName' do
+pod 'VCScrollTabBar'
+end
+```
+
 ## Usage
-Just drag the folder 'ScrollViewTabBar' into your project.
+
 ###### Bottom Indicator
 ```objective-c
 VCScrollTabBarConfig *config = [VCScrollTabBarConfig defaultConfig];
